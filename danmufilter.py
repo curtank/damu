@@ -27,8 +27,12 @@ def sumdata(roomid):
     pickle.dump(jsonlist,open(storefile,"wb"))
 
 #print(jsonlist)
-roomid=156277
-sumdata(roomid)
+roomids=[156277,13703,154537,3484,633019]
+for roomid in roomids:
+    sumdata(roomid)
+    pass
+
+
 storefile="./156277/summdata"
 get=pickle.load(open(storefile,"rb"))
 print(str(len(get)))
