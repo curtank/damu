@@ -7,5 +7,6 @@ for dirpath,dirnames,filenames in os.walk(path):
         fullpath=os.path.join(dirpath,filename)
         file=open(fullpath)
         print(file.readline())
+        dis=file
         pass
     pass
