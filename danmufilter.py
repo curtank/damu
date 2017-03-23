@@ -5,7 +5,7 @@ def gotjson(filepath):
     jsonformats=[]
     file=open(filepath)
     for line in file.readlines():
-        jstr=json.loads(line)
+        jstr=json.loads(line)dfd
         #print(jstr)
         jsonformats.append(jstr)
         pass
